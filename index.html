@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header"></header>
+    <main class="presentacion">
+        <div class="presentacion__contenido">
+            <img class="presentacion__imagen__logo" src="./img/Logo.png">
+            <div class="div__texto__botoneras">
+                <div class="div__texto__interactivo">
+                    <textarea class="textarea__ingrese__texto" type="text" name="textoUsuario" id="textoUsuario" placeholder="Ingresar el texto aquí"></textarea>
+                </div>
+                <div class="alerta__primera">
+                    <p class="alerta__primera__texto">
+                        <img src="./img/Group.png">
+                        Solo letras minusculas y sin acentos</p>
+                </div>
+                <div class="div__container__botones">
+                    <button type="button" onclick="encriptar();" class="boton__encriptar" id="textoUsuario">Encriptar</button>
+                    
+                    <button type="button" onclick="desencriptar();" class="boton__desencriptar" id="textoUsuario">Desencriptar</button>
+                    
+                </div>
+            </div>
+            <div class="div__cuadro__respuesta">
+                <div class="div__primera__vista" id="div__primera__vista">
+                    <img class="presentacion__imagen__muñeco" src="./img/Muñeco.png">
+                    <div class="div__cuadro__alerta">
+                        <p class="div__cuadro__alerta__texto">
+                            Ningun mensaje fue encontrado
+                        </p>
+                        <p class="div__cuadro__alerta__texto__dos">
+                            Ingresa el texto que deseas encriptar o desencriptar.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="div__output div__output__display" id="div__output">
+                    <output id="textoSalida"></output>
+                </div>
+                <div class="div__boton__copiar div__boton__copiar__display" id="div__boton__copiar">
+                        <button onclick="textoCopiado();" class="boton__copiar" id="textoSalida">Copiar</button>
+                </div>
+            
+            </div>
+        </div> 
+    </main>
+    <footer></footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>

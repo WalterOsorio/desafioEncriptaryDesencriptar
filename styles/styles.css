@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color-primario: #E5E5E5;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #0A3871;
+    --color-cuaternario: #D8DFE8;
+    --color-quintuple: #343A40;
+    --color-border: #000000;
+    --color-alerta: #495057;
+
+    --fuente-inter: 'Inter', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-primario);
+    font-family: var(--fuente-inter);
+    height: 100vh;
+}
+
+.header {
+    /* Estilos para el encabezado si los hay */
+}
+
+.presentacion__contenido {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 80px;
+}
+
+.presentacion__imagen__logo {
+    width: 120px;
+    height: 48px;
+}
+
+.presentacion__imagen__muñeco {
+    width: 336px;
+    height: 304px;
+    padding-top: 50%; /* Proporción ajustada */
+}
+
+.div__texto__botoneras {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    width: 600px;
+    max-width: 100%; /* Ancho máximo */
+    margin-top: 1rem;
+}
+
+.input__ingrese__texto {
+    font-size: 2rem;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid var(--color-border);
+    color: var(--color-terciario);
+}
+
+::placeholder {
+    color: var(--color-terciario);
+}
+
+.alerta__primera {
+    padding-top: 28%; /* Proporción ajustada */
+}
+
+.div__container__botones {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+    padding: 5%;
+}
+
+.div__cuadro__respuesta {
+    display: flex;
+    background-color: var(--color-secundario);
+    align-items: center;
+    flex-direction: column;
+    border-radius: 32px;
+    width: 400px;
+    height: 800px;
+    border: 2px solid var(--color-border);
+    padding: 32px;
+    margin-top: 1rem;
+}
+
+.div__cuadro__alerta {
+    display: flex;
+    width: 328px;
+    height: 122px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20%; /* Proporción ajustada */
+}
+
+.boton__encriptar,
+.boton__desencriptar,
+.boton__copiar {
+    width: 100%; /* Ocupa el ancho completo */
+    max-width: 328px;
+    height: 67px;
+    margin-top: 1rem;
+}
+
+.div__boton__copiar {
+    padding-top: 10%;
+}
+
+.div__output {
+    font-family: var(--fuente-inter);
+    font-size: 1.5rem;
+    color: var(--color-alerta);
+    height: 800px;
+}
+
+.boton__encriptar:hover {
+    background-color: var(--color-alerta);
+    cursor: pointer;
+}
+
+.boton__desencriptar:hover {
+    background-color: #495057;
+    color: var(--color-secundario);
+    cursor: pointer;
+}
+
+.boton__copiar:hover {
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    cursor: pointer;
+}
+
+.alerta__primera__texto {
+    font-family: var(--fuente-inter);
+    color: var(--color-alerta);
+}
+
+.display__none {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    /* Estilos para iPad en modo landscape */
+    .presentacion__contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentacion__imagen__muñeco {
+        width: 100%; /* Ocupa el ancho completo */
+        height: auto; /* Ajuste proporcional */
+        max-width: 400px;
+    }
+
+    .div__texto__botoneras {
+        width: 100%; /* Ocupa el ancho completo */
+        max-width: 100%;
+    }
+
+    .input__ingrese__texto {
+        font-size: 1.5rem; /* Reducido para iPad */
+    }
+
+    .div__cuadro__respuesta {
+        width: 100%; /* Ocupa el ancho completo */
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Estilos para celulares en modo portrait */
+    .presentacion__contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentacion__imagen__muñeco {
+        width: 100%; /* Ocupa el ancho completo */
+        height: auto; /* Ajuste proporcional */
+        max-width: 300px;
+    }
+
+    .div__texto__botoneras {
+        width: 100%; /* Ocupa el ancho completo */
+        max-width: 100%;
+    }
+
+    .input__ingrese__texto {
+        font-size: 1.2rem; /* Reducido para celulares */
+    }
+
+    .div__cuadro__respuesta,
+    .div__cuadro__alerta {
+        width: 100%; /* Ocupa el ancho completo */
+        max-width: 100%;
+    }
+}
+
