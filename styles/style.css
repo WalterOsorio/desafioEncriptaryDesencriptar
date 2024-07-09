@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 
 :root{
-    --color-primario: #E5E5E5;
+    --color-primario: #3F0FF4;
     --color-secundario: #F6F6F6;
-    --color-terciario: #0A3871;
+    --color-terciario: #F4903B;
     --color-cuaternario: #D8DFE8;
-    --color-quintuple: #343A40;
-    --color-border: #000000;
-    --color-alerta: #495057;
+    --color-quintuple: #F0755B;
+    --color-border: #F0A05B;
+    --color-alerta: #B948FA;
 
-    --fuente-inter: 'Inter', sans-serif;
+    --fuente-inter: 'Krona One', sans-serif;
 }
 
 *{

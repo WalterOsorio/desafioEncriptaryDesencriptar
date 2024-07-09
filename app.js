@@ -54,15 +54,6 @@ function limpiarCaja () {
     document.querySelector("#textoUsuario").value = "";
 }
 
-/*function desaparecerIniciales(){
-    let mostrarImagen = document.getElementById("presentacion__imagen__muñeco");
-    div.style.display = "none";
-    let mostrarTextoAlerta = document.getElementById("div__cuadro__alerta");
-    div.style.display = "none";
-    
-}*/
-
-
 function condicionesIniciales() {
     limpiarCaja();
 
